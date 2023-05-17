@@ -1,5 +1,7 @@
-import random # Random é a lib responsável por embaralhar os caracteres
-import string # String contém os caracteres necessarios para gerar a senha
+import random  # embaralhar os caracteres.
+import string  # caracteres necessarios para gerar a senha.
+import tkinter # criação de interface gráfica.
+
 
 letras = string.ascii_letters
 numeros = string.digits
