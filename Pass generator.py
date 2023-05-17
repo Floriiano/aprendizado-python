@@ -1,9 +1,13 @@
 import random # Random é a lib responsável por embaralhar os caracteres
-import string
+import string # String contém os caracteres necessarios para gerar a senha
 
-minusculos = string.ascii_lowercase
-maiusculos = string.ascii_uppercase
+letras = string.ascii_letters
 numeros = string.digits
 simbolos = string.punctuation
 
-input("Qual o tamanho da senha desejada?")
+combinacao = letras + numeros + simbolos
+tamanho_senha = int(input("Qual tamanho desejado para sua senha? "))
+
+senha = "".join(random.sample(combinacao,tamanho_senha))
+
+print ("Sua nova senha é: " + senha)
